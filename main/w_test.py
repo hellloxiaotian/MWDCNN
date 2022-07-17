@@ -96,7 +96,8 @@ def test(args, data_loader, save_test_dir, save=False, model_file=None, loss_f=N
         torch.manual_seed(1234)
 
     import model
-    _model = model.Model(args, model_file)
+    # _model = model.Model(args, model_file)
+    _model = torch.load(model_file)
 
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
