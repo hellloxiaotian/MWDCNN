@@ -1,4 +1,4 @@
-This paper is conducted by Chunwei Tian, Menghua Zheng, Wangmeng Zuo, Bob Zhang, Yanning Zhang, David Zhang. Its training codes are will be released when this paper is accepted. 
+This paper as well as  Multi-stage image denoising with the wavelet transform  is conducted by Chunwei Tian, Menghua Zheng, Wangmeng Zuo, Bob Zhang, Yanning Zhang, David Zhang, which is accepted by the Pattern Recognition (SCI-IF:8.518) in 2022. Its training codes are will be released soon.  
 
 
 
@@ -57,3 +57,8 @@ python w_test.py --model_file_name ../model_zoo/wmdcnn/c25/model_sigma25.pth --m
 
 python w_test.py --model_file_name ../model_zoo/wmdcnn/cblind/model_sigma100.pth --mode test --test_dataset CBSD68
 --model_name wmdcnn --rgb_range 1 --n_GPUs 1 --GPU_id 1 --n_colors 3 --sigma 25
+
+
+### You can cite this paper by the following ways. 
+[1] C. Tian, M. Zheng, W. Zuo, B. Zhang, Y. Zhang, D. Zhang. Multi-stage image denoising with the wavelet transform [J]. Pattern Recogition. 2022. 
+ 
