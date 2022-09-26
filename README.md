@@ -1,4 +1,4 @@
-This paper as well as  Multi-stage image denoising with the wavelet transform  is conducted by Chunwei Tian, Menghua Zheng, Wangmeng Zuo, Bob Zhang, Yanning Zhang, David Zhang, which is accepted by the Pattern Recognition (SCI-IF:8.518) in 2022. Its training codes are will be released soon.  
+This paper is conducted by Chunwei Tian, Menghua Zheng, Wangmeng Zuo, Bob Zhang, Yanning Zhang, David Zhang. Its codes are will be released when this paper is accepted. 
 
 
 
@@ -58,7 +58,74 @@ python w_test.py --model_file_name ../model_zoo/wmdcnn/c25/model_sigma25.pth --m
 python w_test.py --model_file_name ../model_zoo/wmdcnn/cblind/model_sigma100.pth --mode test --test_dataset CBSD68
 --model_name wmdcnn --rgb_range 1 --n_GPUs 1 --GPU_id 1 --n_colors 3 --sigma 25
 
+## 1. Network architecture of WMDCNN.
 
-### You can cite this paper by the following ways. 
-[1] C. Tian, M. Zheng, W. Zuo, B. Zhang, Y. Zhang, D. Zhang. Multi-stage image denoising with the wavelet transform [J]. Pattern Recogition. 2022. 
- 
+![1](assets/1.png)
+
+## 2. Architecture of weight generator (WG)
+
+![2](assets/2.png)
+
+## 3. Architecture of feature enhancement (FE) as well as residual dense block (RDB)
+
+![3](assets/3.png)
+
+## 4. MWDCNN for BSD68 
+
+![4](assets/4.png)
+
+## 5. MWDCNN for Set12
+
+![5](assets/5.png)
+
+## 6. MWDCNN for CBSD68 
+
+![6](assets/6.png)
+
+## 7. MWDCNN for Kodak24
+
+![7](assets/7.png)
+
+## 8. MWDCNN for real noise images
+
+![8](assets/8.png)
+
+## 9. MWDCNN for BSD68
+
+![9](assets/9.png)
+
+## 10. MWDCNN for CBSD68 and Kodak24 
+
+![10](assets/10.png)
+
+## 11. MWDCNN for Kodka24
+
+![11](assets/11.png)
+
+## 12. MWDCNN for Kodak24
+
+![13](assets/13.png)
+
+## 13. MWDCNN for Kodak24
+
+![14](assets/14.png)
+
+## 14. Visual results of Set12
+
+![15](assets/15.png)
+
+## 15. Visual results of Set12
+
+![16](assets/16.png)
+
+## 16. Visual results of Kodak24
+
+![17](assets/17.png)
+
+## 17. Visual results of Kodak24
+
+![18](assets/18.png)
+
+### You can cite this paper by the following ways.
+
+[1] C. Tian, M. Zheng, W. Zuo, B. Zhang, Y. Zhang, D. Zhang. Multi-stage image denoising with the wavelet transform [J]. Pattern Recogition. 2022.
