@@ -1,6 +1,4 @@
-This paper is conducted by Chunwei Tian, Menghua Zheng, Wangmeng Zuo, Bob Zhang, Yanning Zhang, David Zhang. Its codes are will be released when this paper is accepted. 
-
-
+This paper as well as Multi-stage image denoising with the wavelet transform is conducted by Chunwei Tian, Menghua Zheng, Wangmeng Zuo, Bob Zhang, Yanning Zhang, David Zhang. It is accepted by the Pattern Recognition (SCI-IF:8.518) in 2022. 
 
 ## Requirements (Pytorch)
 
