@@ -1,4 +1,4 @@
-## This paper as well as Multi-stage image denoising with the wavelet transform is conducted by Chunwei Tian, Menghua Zheng, Wangmeng Zuo, Bob Zhang, Yanning Zhang, David Zhang. It is accepted by the Pattern Recognition (SCI-IF:8.518) in 2022. It can be obtained at https://arxiv.org/abs/2209.12394. 
+## This paper as well as Multi-stage image denoising with the wavelet transform is conducted by Chunwei Tian(IEEE Member), Menghua Zheng, Wangmeng Zuo(IEEE Senior Member), Bob Zhang, Yanning Zhang(IEEE Senior Member), David Zhang(IEEE Life Fellow). It is accepted by the Pattern Recognition (SCI-IF:8.518) in 2022. It can be obtained at https://arxiv.org/abs/2209.12394. 
 
 ## This paper uses a dynamic convolution, wavelet transform and residual dense architecture to implment an efficient CNN for addressing image denoising under complex scenes. 
 
