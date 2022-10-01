@@ -93,39 +93,39 @@ python w_test.py --model_file_name ../model_zoo/wmdcnn/cblind/model_sigma100.pth
 
 ![8](assets/8.png)
 
-## 9. MWDCNN for BSD68
+## 9. FSIM results of different methods on BSD68 with noise levels of 15, 25 and 50.
 
 ![9](assets/9.png)
 
-## 10. MWDCNN for CBSD68 and Kodak24 
+## 10. FSIM results of different methods on CBSD68 and Kodak24 with noise levels of 15, 25, 35, 50 and 75.  
 
 ![10](assets/10.png)
 
-## 11. MWDCNN for Kodka24
+## 11. SSIM results of different methods on Kodak24 with noise levels of 15, 25, 35, 50 and 75. 
 
 ![11](assets/11.png)
 
-## 12. MWDCNN for Kodak24
+## 12. LPIPS results of different methods on Kodak24 with noise levels of 15, 25, 35, 50 and 75. 
 
 ![13](assets/13.png)
 
-## 13. MWDCNN for Kodak24
+## 13. Inception-Score of different methods on Kodak24 with noise levels of 15 and 50.
 
 ![14](assets/14.png)
 
-## 14. Visual results of Set12
+## 14. Visual results of Set12 with noise level of 15. 
 
 ![15](assets/15.png)
 
-## 15. Visual results of Set12
+## 15. Visual results of Set12 with noisel level of 25. 
 
 ![16](assets/16.png)
 
-## 16. Visual results of Kodak24
+## 16. Visual results of Kodak24 with noise level of 25. 
 
 ![17](assets/17.png)
 
-## 17. Visual results of Kodak24
+## 17. Visual results of Kodak24 with noise level of 35.
 
 ![18](assets/18.png)
 
