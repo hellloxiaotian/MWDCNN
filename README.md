@@ -73,23 +73,23 @@ python w_test.py --model_file_name ../model_zoo/wmdcnn/cblind/model_sigma100.pth
 
 ![3](assets/3.png)
 
-## 4. MWDCNN for BSD68 
+## 4. Average PSNR (dB) of different methods on BSD68 with noise levels of 15, 25 and 50.
 
 ![4](assets/4.png)
 
-## 5. MWDCNN for Set12
+## 5. Average PSNR (dB) of different methods on Set12 with noise levels of 15, 25 and 50.
 
 ![5](assets/5.png)
 
-## 6. MWDCNN for CBSD68 
+## 6. Average PSNR (dB) of different methods on CBSD68 with noise levels of 15, 25, 35, 50 and 75.
 
 ![6](assets/6.png)
 
-## 7. MWDCNN for Kodak24
+## 7. Average PSNR (dB) of different methods on Kodak24 with noise levels of 15, 25, 35, 50 and 75.
 
 ![7](assets/7.png)
 
-## 8. MWDCNN for real noise images
+## 8. PSNR (dB) of different methods on real noisy images (CC).
 
 ![8](assets/8.png)
 
