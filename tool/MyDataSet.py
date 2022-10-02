@@ -134,8 +134,6 @@ class Art_nosie_Dataset(Dataset):   # 添加人工噪声
         # os.listdir() 方法用于返回指定的文件夹包含的文件或文件夹的名字的列表。这个列表以字母顺序
         filelist = os.listdir(data_dir)
 
-        filelist.sort()
-
         for img_name in filelist:
             path_img = os.path.join(data_dir, img_name)
 
