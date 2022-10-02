@@ -15,6 +15,10 @@
 
 #### pytorch_wavelets
 
+#### tqdm
+
+#### skimage
+
 ## DataSet
 
 ### Training datasets
