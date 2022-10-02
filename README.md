@@ -45,25 +45,10 @@
 
 cd main
 
-### Gray noisy images
-
-python train.py --model_file_name ../model_zoo/wmdcnn/g25/model_sigma25.pth --mode test --test_dataset BSD68
---model_name wmdcnn --rgb_range 1 --n_GPUs 1 --GPU_id 1 --n_colors 1 --sigma 25
-
-### Gray blind denoising
-
-python train.py --model_file_name ../model_zoo/wmdcnn/gblind/model_sigma100.pth --mode test --test_dataset BSD68
---model_name wmdcnn --rgb_range 1 --n_GPUs 1 --GPU_id 1 --n_colors 1 --sigma 25
-
-### Color noisy images
-
-python train.py --model_file_name ../model_zoo/wmdcnn/c25/model_sigma25.pth --mode test --test_dataset CBSD68
---model_name wmdcnn --rgb_range 1 --n_GPUs 1 --GPU_id 1 --n_colors 3 --sigma 25
-
 ### Color blind denoising
 
-python train.py --model_file_name ../model_zoo/wmdcnn/cblind/model_sigma100.pth --mode test --test_dataset CBSD68
---model_name wmdcnn --rgb_range 1 --n_GPUs 1 --GPU_id 1 --n_colors 3 --sigma 25
+python train.py --model_file_name ../model_zoo/wmdcnn/real/model_sigma200.pth --mode test --test_dataset real_dataset
+--model_name wmdcnn --rgb_range 1 --n_GPUs 1 --GPU_id 1 --n_colors 3 --sigma 200
 
 ## 1. Network architecture of WMDCNN.
 
