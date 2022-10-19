@@ -2,6 +2,9 @@
 
 ## This paper uses a dynamic convolution, wavelet transform and residual dense architecture to implment an efficient CNN for addressing image denoising under complex scenes. 
 
+https://user-images.githubusercontent.com/25679314/196690200-d440a6a2-aea0-433a-b64b-1def31b00d39.mp4
+
+
 ## Its abstract is shown as follows.
 ## Deep convolutional neural networks (CNNs) are used for image denoising via automatically mining accurate structure information. However, most of existing CNNs  depend on enlarging depth of designed networks to obtain better denoising performance, which may cause training difficulty. In this paper, we propose a multi-stage  image denoising CNN with the  wavelet transform  (MWDCNN) via three stages, i.e., a dynamic convolutional block (DCB), two cascaded wavelet transform and enhancement blocks (WEBs) and a residual block (RB). DCB uses a dynamic convolution to dynamically adjust parameters of several convolutions for making a tradeoff between denoising performance and computational costs. WEB uses a combination of signal processing technique (i.e., wavelet transformation) and discriminative learning to suppress noise for recovering more detailed information in image denoising. To further remove redundant features, RB is used to refine obtained features for improving denoising effects and reconstruct clean images via improved residual dense architectures. Experimental results show that the proposed MWDCNN outperforms some popular denoising methods in terms of quantitative and qualitative analysis. Codes are available at https://github.com/hellloxiaotian/MWDCNN.
 
