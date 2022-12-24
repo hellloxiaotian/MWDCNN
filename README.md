@@ -45,9 +45,11 @@ https://user-images.githubusercontent.com/25679314/196690200-d440a6a2-aea0-433a-
 ## Command
 
 ### Train MWDCNN-S (WMDCNN with know noise level)
-python trian.py --mode train --n_pat_per_image 512 --batch_size 64 --model_name mdwcnn --rgb_range 1 --sigma 25 --lr 1e-3 --n_GPUs 1 --GPU_id 0
+python train.py --mode train --n_pat_per_image 512 --batch_size 64 --model_name mwdcnn --rgb_range 1 --n_colors 1 --sigma 25 --lr 1e-4 --n_GPUs 1 --GPU_
+id 0
 ### Train MWDCNN-B (MWDCNN with blind nosie level)
-python trian.py --mode train --n_pat_per_image 512 --batch_size 64 --model_name mdwcnn --rgb_range 1 --sigma 100 --lr 1e-3 --n_GPUs 1 --GPU_id 0
+python train.py --mode train --n_pat_per_image 512 --batch_size 64 --model_name mwdcnn --rgb_range 1 --n_colors 1 --sigma 100 --lr 1e-4 --n_GPUs 1 --GPU_
+id 0
 ### Test
 
 cd main
