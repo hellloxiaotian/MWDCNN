@@ -32,15 +32,13 @@ if args.n_colors == 3:
         print("Use the realnoise dataset...........")
         My_Dataset = Real_Dataset
 
-        args.train_dataset = "real_dataset/SSID+realworld/"  # 训练集只有有一个
+        args.train_dataset = "real_dataset/realworld/"
         args.test_dataset = "real_dataset"  # 测试集也只有一个
         print("n_color is 3, Training in real_dastaset, evaluate in realdataset")
 
     else:   # 使用的是 人工噪声
         My_Dataset = Art_nosie_Dataset
-        # args.train_dataset = "CBSD432+pristine_images"  # 训练集已有一个
 
-        # args.train_dataset = "CBSD432+pristine+DIV2k+Flick2k"
         args.train_dataset = "CBSD432"
 
         # 测试集有多个
@@ -51,15 +49,11 @@ if args.n_colors == 3:
 
 elif args.n_colors == 1:
     color = 'g'
-    args.train_dataset = "BSD432+pristine+DIV2K+Flick2k"
+    args.train_dataset = "BSD432"
     # args.train_dataset = "BSD432"
 
-    if args.model_name == 'mstd':
-        My_Dataset = Multi_Art_nosie_Dataset
-        # My_Dataset = Art_nosie_Dataset
-    else:
-        My_Dataset = Art_nosie_Dataset
-        print('My Dataset choose Art_nosie_Dataset')
+    My_Dataset = Art_nosie_Dataset
+    print('My Dataset choose Art_nosie_Dataset')
 
     if args.test_dataset == "CBSD68":  # BSD68是默认值
         args.test_dataset = "BSD68"
@@ -285,7 +279,6 @@ def train(args):
         checkpoint = torch.load(state_path)
         _model.model.load_state_dict(checkpoint['net'])
         optimizer.load_state_dict(checkpoint['optimizer'])
-        # optimizer.param_groups[0]["lr"] = 1e-5
         start_epoch = checkpoint['epoch']
     else:
         start_epoch = 0
@@ -298,10 +291,8 @@ def train(args):
                                                    180-start_epoch,
                                                    180-start_epoch,
                                                    190], gamma=0.1)  # learning rates
-    # scheduler = MultiStepLR(optimizer, milestones=[30, 45], gamma=0.1)  # learning rates
     # =======================================保存命令行参数======================================================
     if args.flag == 0:
-        # flag 是用于标识是否是消融实验的
         if not os.path.exists(os.path.join(save_loss_dir, args.model_name, color, str(args.sigma))):  # 没有问该文件夹，则创建该文件夹
             os.makedirs(os.path.join(save_loss_dir, args.model_name, color, str(args.sigma)))
             f = open(os.path.join(save_loss_dir, args.model_name, color, str(args.sigma), 'train_result.txt'), 'w')
@@ -315,22 +306,6 @@ def train(args):
         # 保存命令行参数
         p_str = " ".join(sys.argv)
         save_to_file(os.path.join(save_loss_dir, args.model_name, color, str(args.sigma), 'train_result.txt'), p_str+"\n")
-    else:
-        # 消融实验
-        flag = str(args.flag)
-        if not os.path.exists(os.path.join(save_loss_dir, args.model_name, flag)):  # 没有问该文件夹，则创建该文件夹
-            os.makedirs(os.path.join(save_loss_dir, args.model_name, flag))
-            f = open(os.path.join(save_loss_dir, args.model_name, flag, 'train_result.txt'), 'w')
-            f.close()
-            print("Make the dir: {}".format(os.path.join(save_loss_dir, args.model_name, flag, 'train_result.txt')))
-
-        print("Open the dir: {}".format(os.path.join(save_loss_dir, args.model_name, flag, 'train_result.txt')))
-
-        # 保存命令行参数
-        p_str = " ".join(sys.argv)
-        save_to_file(os.path.join(save_loss_dir, args.model_name, flag, 'train_result.txt'), '\n'+p_str+'\n')
-
-        print('Save command Successfully!\n')
 
     # ====================================step5/5 trianing......===============================================
     if args.debug:

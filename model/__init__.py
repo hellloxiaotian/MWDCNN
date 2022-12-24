@@ -31,12 +31,6 @@ class Model(nn.Module):
         if self.mode == 'train':
             self.model.train()
 
-            if self.args.pretrain != '':
-                self.model.load_state_dict(
-                    torch.load(
-                        os.path.join(self.args.dir_model, 'pre_train', self.args.model_name, self.args.pre_train)),
-                    strict=False)
-
             # self.model.to(self.device)
             self.model = nn.DataParallel(self.model.to(self.device), device_ids=[i for i in range(self.n_GPUs)])
         elif self.mode == 'test':
