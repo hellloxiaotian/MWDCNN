@@ -129,4 +129,4 @@ python train.py --model_file_name ../model_zoo/MWDCNN/real/model_sigma200.pth --
 
 ### You can cite this paper by the following ways.
 
-[1] C. Tian, M. Zheng, W. Zuo, B. Zhang, Y. Zhang, D. Zhang. Multi-stage image denoising with the wavelet transform [J]. Pattern Recogition. 2022.
+[1] C. Tian, M. Zheng, W. Zuo, B. Zhang, Y. Zhang, D. Zhang. Multi-stage image denoising with the wavelet transform [J]. Pattern Recogition. 2023.
